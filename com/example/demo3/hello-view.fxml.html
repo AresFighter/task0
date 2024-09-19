@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>hello-view.fxml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+hello-view.fxml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+
+<span class="s0">&lt;?</span><span class="s1">import </span><span class="s2">javafx.geometry.*</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;?</span><span class="s1">import </span><span class="s2">javafx.scene.control.*</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;?</span><span class="s1">import </span><span class="s2">javafx.scene.layout.*</span><span class="s0">?&gt;</span>
+
+<span class="s0">&lt;VBox </span><span class="s1">alignment</span><span class="s2">=&quot;CENTER&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;334.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;417.0&quot; </span><span class="s1">spacing</span><span class="s2">=&quot;20.0&quot; </span><span class="s1">xmlns</span><span class="s2">=&quot;http://javafx.com/javafx/17.0.2-ea&quot; </span><span class="s1">xmlns:fx</span><span class="s2">=&quot;http://javafx.com/fxml/1&quot; </span><span class="s1">fx:controller</span><span class="s2">=&quot;com.example.demo3.Controller&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;padding&gt;</span>
+        <span class="s0">&lt;Insets </span><span class="s1">bottom</span><span class="s2">=&quot;20.0&quot; </span><span class="s1">left</span><span class="s2">=&quot;20.0&quot; </span><span class="s1">right</span><span class="s2">=&quot;20.0&quot; </span><span class="s1">top</span><span class="s2">=&quot;20.0&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;/padding&gt;</span>
+
+    <span class="s0">&lt;FlowPane </span><span class="s1">alignment</span><span class="s2">=&quot;CENTER&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;65.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;187.0&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;children&gt;</span>
+            <span class="s0">&lt;Label </span><span class="s1">prefHeight</span><span class="s2">=&quot;18.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;102.0&quot; </span><span class="s1">text</span><span class="s2">=&quot;Введите сумму:&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;TextField </span><span class="s1">fx:id</span><span class="s2">=&quot;summa&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;26.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;102.0&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;/children&gt;</span>
+    <span class="s0">&lt;/FlowPane&gt;</span>
+
+    <span class="s0">&lt;HBox </span><span class="s1">alignment</span><span class="s2">=&quot;CENTER_LEFT&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;50.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;258.0&quot; </span><span class="s1">spacing</span><span class="s2">=&quot;10.0&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;children&gt;</span>
+            <span class="s0">&lt;Button </span><span class="s1">fx:id</span><span class="s2">=&quot;mal_ch&quot; </span><span class="s1">mnemonicParsing</span><span class="s2">=&quot;false&quot; </span><span class="s1">onAction</span><span class="s2">=&quot;#mal_chai&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;25.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;161.0&quot; </span><span class="s1">style</span><span class="s2">=&quot;-fx-background-color: fa865c; -fx-background-radius: 15;&quot; </span><span class="s1">text</span><span class="s2">=&quot;Маленькие (3%)&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;Region </span><span class="s1">prefWidth</span><span class="s2">=&quot;10&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;Label </span><span class="s1">fx:id</span><span class="s2">=&quot;mal&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;20.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;178.0&quot; </span><span class="s1">style</span><span class="s2">=&quot;-fx-border-color: #828282; -fx-border-radius: 5;&quot; </span><span class="s1">text</span><span class="s2">=&quot;Расчёт&quot; </span><span class="s1">textAlignment</span><span class="s2">=&quot;CENTER&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;/children&gt;</span>
+    <span class="s0">&lt;/HBox&gt;</span>
+
+    <span class="s0">&lt;HBox </span><span class="s1">alignment</span><span class="s2">=&quot;CENTER_LEFT&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;50.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;258.0&quot; </span><span class="s1">spacing</span><span class="s2">=&quot;10.0&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;children&gt;</span>
+            <span class="s0">&lt;Button </span><span class="s1">fx:id</span><span class="s2">=&quot;sred_ch&quot; </span><span class="s1">mnemonicParsing</span><span class="s2">=&quot;false&quot; </span><span class="s1">onAction</span><span class="s2">=&quot;#sred_chai&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;26.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;161.0&quot; </span><span class="s1">style</span><span class="s2">=&quot;-fx-background-color: #5c89fa; -fx-background-radius: 15;&quot; </span><span class="s1">text</span><span class="s2">=&quot;Обычные (10%)&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;Region </span><span class="s1">prefWidth</span><span class="s2">=&quot;10&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;Label </span><span class="s1">fx:id</span><span class="s2">=&quot;sred&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;18.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;180.0&quot; </span><span class="s1">style</span><span class="s2">=&quot;-fx-border-color: #828282; -fx-border-radius: 5;&quot; </span><span class="s1">text</span><span class="s2">=&quot;Расчёт&quot; </span><span class="s1">textAlignment</span><span class="s2">=&quot;CENTER&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;/children&gt;</span>
+    <span class="s0">&lt;/HBox&gt;</span>
+
+    <span class="s0">&lt;HBox </span><span class="s1">alignment</span><span class="s2">=&quot;CENTER_LEFT&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;50.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;258.0&quot; </span><span class="s1">spacing</span><span class="s2">=&quot;10.0&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;children&gt;</span>
+            <span class="s0">&lt;Button </span><span class="s1">fx:id</span><span class="s2">=&quot;big_ch&quot; </span><span class="s1">mnemonicParsing</span><span class="s2">=&quot;false&quot; </span><span class="s1">onAction</span><span class="s2">=&quot;#big_chai&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;26.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;160.0&quot; </span><span class="s1">style</span><span class="s2">=&quot;-fx-background-color: #33a146; -fx-background-radius: 15;&quot; </span><span class="s1">text</span><span class="s2">=&quot;Большие (15%)&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;Region </span><span class="s1">prefWidth</span><span class="s2">=&quot;10&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;Label </span><span class="s1">fx:id</span><span class="s2">=&quot;big&quot; </span><span class="s1">prefHeight</span><span class="s2">=&quot;18.0&quot; </span><span class="s1">prefWidth</span><span class="s2">=&quot;180.0&quot; </span><span class="s1">style</span><span class="s2">=&quot;-fx-border-color: #828282; -fx-border-radius: 5;&quot; </span><span class="s1">text</span><span class="s2">=&quot;Расчёт&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;/children&gt;</span>
+    <span class="s0">&lt;/HBox&gt;</span>
+<span class="s0">&lt;/VBox&gt;</span>
+</pre>
+</body>
+</html>
