@@ -31,7 +31,7 @@ public class Controller {
         mal.setText("Сумма с чаевыми: " + procent.countSumTrunc(sum, 3));
     }
 
-    // Метод для расчета обычных чаевых (10%)
+    // Метод для расчета обычных чаевых (10%) bjrgegrhghr
     public void sred_chai() {
         double sum = Double.parseDouble(summa.getText());
         sred.setText("Сумма с чаевыми: " + procent.countSumTrunc(sum, 10));
