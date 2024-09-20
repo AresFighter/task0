@@ -22,7 +22,6 @@ public class Controller {
     @FXML
     public TextField summa;
 
-    // Создание объекта модели для расчета чаевых
     Procent procent = new Procent();
 
     // Метод для расчета малых чаевых (3%)
